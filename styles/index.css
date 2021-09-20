@@ -1,0 +1,83 @@
+.container {
+    height: 100vh;
+    margin: 20px;
+    padding: 20px;
+    background-color: purple;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+    gap: 0 20px;
+}
+
+.rect {
+    width: 468px;
+    height: 160px;
+    background-color: #F48C06;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    gap: 20px;
+}
+
+.item {
+    min-width: 78px;
+    min-height: 78px;
+    background-color: #9D0208;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+
+.rect1 {
+    align-items: flex-end;
+}
+
+.rect2 {
+    justify-content: center;
+    align-items: stretch;
+}
+
+.rect3 {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.rect4 {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.rect4__item3 {
+    align-self: flex-end;
+}
+
+.rect5 {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rect5__item1, .rect5__item3 {
+    align-self: stretch;
+}
+
+.rect5__item2 {
+    min-height: 64px;      /* SOME FEEDBACK ON THIS would be nice :); shrink doesnt have an effect bc it is being affected by min-height 78px or..??
+ maybe it has to do with the axis, what does that even mean, eyeroll .. because i'm shrinking vertically, but it should work hmmmm */
+
+    /*flex-shrink: 0.5;*/
+}
+
+.rect6 {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rect6__item2 {
+    flex-grow: 0.7;
+}
+
